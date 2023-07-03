@@ -25,7 +25,7 @@ Current Method Selected: **{}**
 
 
 HELP_MESSAGE = '''
-Hey! My name is {firstname}. I am a DTGLINKS.IN Shortner bot make your Work Easy and Help you to Earn more 💰.
+Hey! My name is {firstname}. I am a Shortner bot make your Work Easy and Help you to Earn more 💰.
 
 I have a ton of handy features to help you out, such as:
 

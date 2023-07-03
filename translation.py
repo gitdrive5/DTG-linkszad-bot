@@ -152,11 +152,10 @@ START_MESSAGE_REPLY_MARKUP  = InlineKeyboardMarkup([
     ],[
         InlineKeyboardButton('Main Channal', url="https://t.me/tgnvs"),
         InlineKeyboardButton('Movie Channal Link', url="https://t.me/tg_movielink")
-    ][
+    ],[
         InlineKeyboardButton('Help', callback_data=f'help_command'),
         InlineKeyboardButton('About', callback_data='about_command')
-    ],
-        [
+    ],[
         InlineKeyboardButton('Method', callback_data=f'method_command'),
         InlineKeyboardButton('Close', callback_data='delete')
     ],

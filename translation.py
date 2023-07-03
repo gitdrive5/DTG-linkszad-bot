@@ -13,7 +13,7 @@ Ex: `/batch -100xxx`
 
 START_MESSAGE = '''Hello, {}
 
-I'm a nanolinks.in Shortener Bot short Using your API. 
+I'm a link Shortener Bot short Using your API. 
 
 Just Send me Any Post with Mdisk or Other Links. I will Convert Those Links Using Your API and Send them Back To You. I work in Channels too. 
 
@@ -90,9 +90,9 @@ Current Method: {method}
     
 Methods Available:
 
-~ `mdlink` - Change all the links of the post to your MDisk account first and then short to DTGLINKS.IN link.
+~ `mdlink` - Change all the links of the post to your MDisk account first and then short to shortener link.
 
-~ `shortener` - Short all the links of the post to nanolinks.in link directly.
+~ `shortener` - Short all the links of the post to shortener link directly.
 
 To change method, choose it from the following options:
 """
@@ -148,6 +148,11 @@ ABOUT_REPLY_MARKUP = InlineKeyboardMarkup([
 
 START_MESSAGE_REPLY_MARKUP  = InlineKeyboardMarkup([
     [
+        InlineKeyboardButton('𝐋𝐈𝐍𝐊 𝐅𝐈𝐍𝐃 𝐁𝐎𝐓', url="https://t.me/nvslinkbot")
+    ],[
+        InlineKeyboardButton('Main Channal', url="https://t.me/tgnvs"),
+        InlineKeyboardButton('Movie Channal Link', url="https://t.me/tg_movielink")
+    ][
         InlineKeyboardButton('Help', callback_data=f'help_command'),
         InlineKeyboardButton('About', callback_data='about_command')
     ],

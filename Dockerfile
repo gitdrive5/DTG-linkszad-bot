@@ -1,9 +1,15 @@
-FROM python:3.10-slim-buster
+FROM python:3.10.6-slim-buster
 
-RUN apt update && apt upgrade -y
+# Install required system packages
+RUN apt-get update && \
+    apt-get install -y ffmpeg libsm6 libxext6
+RUN apt-get install build-essential python3-dev -y
 RUN apt install git -y
-COPY requirements.txt /requirements.txt
+# Set the working directory
+WORKDIR /app
 
-RUN cd
-RUN pip3 install -U pip && pip3 install -U -r requirements.txt
-CMD [ "python3", "main.py"]
+# Copy the requirements file to the working directory
+COPY start.sh /start.sh
+
+# Set the command to run the Python script
+CMD ["/bin/bash", "/start.sh"]
